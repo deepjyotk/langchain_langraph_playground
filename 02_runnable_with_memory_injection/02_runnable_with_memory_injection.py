@@ -7,6 +7,14 @@ import os
 
 load_dotenv()
 
+'''
+
+1. basically working with memory injection
+2. the RunnableWithMessageHistory allows us to inject the memory into the chain
+
+'''
+
+
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
 

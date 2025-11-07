@@ -12,6 +12,17 @@ load_dotenv()
 openai_api_key = os.getenv("OPENAI_API_KEY")
 
 
+'''
+
+1. Working with few-shot prompt template
+
+2. Benefits:
+    - Behavior shaping
+    - Consistency (ensures that model spits out the answer in same consistent format)
+    - Domain adaptation
+'''
+
+
 # --------------------------
 # 1. Base LLM
 # --------------------------

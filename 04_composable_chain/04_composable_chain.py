@@ -61,15 +61,15 @@ if __name__ == "__main__":
     topic = "polymorphism"
 
     # First, run two_output_chain to get dict
-    intermediate = two_output_chain.invoke({"topic": topic})
+    # intermediate = two_output_chain.invoke({"topic": topic})
 
-    # Preview what quiz_prompt will look like
-    preview_messages = quiz_prompt.format_messages(**intermediate)
+    # # Preview what quiz_prompt will look like
+    # preview_messages = quiz_prompt.format_messages(**intermediate)
 
-    print("=== Final Prompt Sent to LLM ===")
-    for msg in preview_messages:
-        print(f"{msg.type.upper()}: {msg.content}")
-        print("-----")
+    # print("=== Final Prompt Sent to LLM ===")
+    # for msg in preview_messages:
+    #     print(f"{msg.type.upper()}: {msg.content}")
+    #     print("-----")
 
     # Now run full chain
     result = full_chain.invoke({"topic": topic})
